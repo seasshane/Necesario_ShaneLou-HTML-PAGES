@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shane Lou Necesario | Portfolio</title>
+
+<style>
+/* RESET & FONT */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color:white;
+    text-align:center;
+    line-height:1.6;
+}
+
+/* HEADER */
+header {
+    padding:30px 20px;
+    border-bottom: 2px solid #ffd369;
+}
+
+/* Profile Picture */
+.profile {
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.profile img {
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border: 3px solid #ffd369;
+    margin-bottom:10px;
+}
+
+header h1 {
+    font-size:36px;
+    margin-bottom:5px;
+}
+
+header p {
+    font-size:18px;
+    color:#ffd369;
+}
+
+/* NAVIGATION */
+nav {
+    margin:25px 0;
+}
+
+nav a {
+    text-decoration:none;
+    background:#ffd369;
+    color:black;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:8px;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+
+nav a:hover {
+    background:#ffb703;
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+    display:none;
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    padding:25px;
+    background:rgba(255,255,255,0.08);
+    border-radius:15px;
+    text-align:left;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.section:target {
+    display:block;
+}
+
+/* HEADINGS */
+h2 {
+    margin-bottom:15px;
+    border-bottom:2px solid #ffd369;
+    padding-bottom:5px;
+}
+
+h3 {
+    margin-top:15px;
+    color:#ffd369;
+}
+
+/* LISTS */
+ul {
+    margin-left:20px;
+}
+
+li {
+    margin-bottom:10px;
+}
+
+/* HOME IMAGES */
+.home img {
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+    display:block;
+    margin:15px auto;
+    transition: transform 0.3s;
+}
+
+.home img:hover {
+    transform: scale(1.03);
+}
+
+/* ABOUT / BIO SECTION */
+.bio {
+    text-align:center;
+    font-style:italic;
+    color:#ffd369;
+    padding:15px;
+    background: rgba(255,255,255,0.05);
+    border-radius:12px;
+    margin:15px auto;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+/* PROJECTS GRID */
+.projects-grid {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    margin-top:15px;
+}
+
+/* LANDSCAPE MAIN PROJECTS */
+.main-projects {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-bottom:30px;
+}
+
+.project {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:10px;
+    background: rgba(255,255,255,0.1);
+    border-radius:10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.2);
+}
+
+.project img {
+    width:120px;
+    height:120px;
+    border-radius:10px;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+/* MY WORK GRID */
+.my-work-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap:20px;
+}
+
+/* CONTACT LINKS */
+.contact a {
+    color:#ffd369;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact a:hover {
+    text-decoration:underline;
+}
+
+/* FOOTER */
+footer {
+    margin-top:40px;
+    padding:15px;
+    font-size:14px;
+    color:#ffd369;
+}
+
+/* MY WORK HEADING */
+.my-work-heading {
+    grid-column: 1 / -1;
+    text-align:left;
+    margin-top:25px;
+    font-size:20px;
+    color:#ffd369;
+    border-bottom:1px solid #ffd369;
+    padding-bottom:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="profile">
+        <img src="img/prof.jpg" alt="Profile Picture">
+    </div>
+    <h1>Necesario, Shane Lou S.</h1>
+    <p>Bachelor of Science in Information Technology | 3rd Year</p>
+</header>
+
+<nav>
+    <a href="#home">🏠 Home</a>
+    <a href="#objective">🎯 Career Objective</a>
+    <a href="#skills">🛠 Skills</a>
+    <a href="#projects">📂 Projects</a>
+    <a href="#contact">📞 Contact Information</a>
+</nav>
+
+<!-- HOME SECTION -->
+<div id="home" class="section home">
+    <h2>"My small family is full of joy, love, and moments of sadness, making every day meaningful and memorable."</h2>
+    <img src="img/fam.jpg" alt="My Family Picture">
+    <img src="img/fam1.jpg" alt="My Family Picture">
+</div>
+
+<!-- CAREER OBJECTIVE -->
+<div id="objective" class="section">
+    <h2>🎯 Career Objective</h2>
+    <p>
+        I am a 3rd year Bachelor of Science in Information Technology student.
+        My goal is to successfully complete my studies and achieve my dreams in Information Technology.
+        I am dedicated to enhancing my programming and studying skills.
+        My future plan is to enroll in Criminology to gain more knowledge and open more opportunities.
+        I am open to accepting any job that God has planned for me, working hard,
+        and doing my best to grow, succeed, and make my family proud.
+    </p>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="section">
+    <h2>🛠 Skills</h2>
+
+    <h3>Technical Skills</h3>
+    <ul>
+        <li>Basic knowledge in HTML, CSS, and JavaScript</li>
+        <li>PHP and MySQL database management</li>
+        <li>Basic UI/UX design using Figma</li>
+        <li>Graphic design and editing using Canva</li>
+        <li>Basic photo editing using Adobe Photoshop</li>
+    </ul>
+
+    <h3>Personal Skills</h3>
+    <ul>
+        <li>Adaptability and willingness to learn</li>
+        <li>Singing as a personal hobby, usually performing at home</li>
+        <li>Experimenting with different foods and creating new recipes at home</li>
+    </ul>
+</div>
+
+<!-- PROJECTS -->
+<div id="projects" class="section">
+    <h2>📂 Projects</h2>
+
+    <!-- LANDSCAPE MAIN PROJECTS -->
+    <div class="main-projects">
+        <div class="project">
+            <img src="img/logo.jpg" alt="Don Macchiato Logo">
+            <div><strong>Don Macchiato Brew Tech & Billing System</strong></div>
+        </div>
+        <div class="project">
+            <img src="img/logo1.png" alt="KitchenSphere Logo">
+            <div><strong>KitchenSphere: Personal Recipe & Meal Planning App</strong></div>
+        </div>
+    </div>
+
+    <!-- MY WORK HEADING -->
+    <div class="my-work-heading">My Work</div>
+
+    <!-- MY WORK GRID -->
+    <div class="my-work-grid">
+        <div class="project">
+            <img src="img/1.jpg" alt="Project 1">
+            <div><strong>Project 1</strong></div>
+        </div>
+        <div class="project">
+            <img src="img/2.jpg" alt="Project 2">
+            <div><strong>Project 2</strong></div>
+        </div>
+        <div class="project">
+            <img src="img/3.jpg" alt="Project 3">
+            <div><strong>Project 3</strong></div>
+        </div>
+        <div class="project">
+            <img src="img/4.jpg" alt="Project 4">
+            <div><strong>Project 4</strong></div>
+        </div>
+        <div class="project">
+            <img src="img/5.jpg" alt="Project 5">
+            <div><strong>Project 5</strong></div>
+        </div>
+        <div class="project">
+            <img src="img/6.jpg" alt="Project 6">
+            <div><strong>Project 6</strong></div>
+        </div>
+        <div class="project">
+            <img src="img/7.jpg" alt="Project 7">
+            <div><strong>Project 7</strong></div>
+        </div>
+        <div class="project">
+            <img src="img/8.jpg" alt="Project 8">
+            <div><strong>Project 8</strong></div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section contact">
+    <h2>📞 Contact Information</h2>
+    <p><strong>Email:</strong> seasshane@gmail.com</p>
+    <p><strong>Phone:</strong> 09770766536</p>
+    <p><strong>Visit this Facebook business page at facebook.com/printastic25 for printed T-shirts and unique souvenirs</strong> 
+        <a href="https://www.facebook.com/printastic25" target="_blank">
+            facebook.com/printastic25
+        </a>
+    </p>
+    <!-- BIO IN CONTACT -->
+    <div class="bio" style="margin-top:20px;">
+        Life is like a butterfly with many wings, constantly growing, learning, and changing. 
+        Being a student, I face life with challenges and opportunities, constantly learning new things and pursuing my dreams with curiosity. 
+        Being a daughter and a sister, I share life with love and care, offering warmth and support to my loved ones, knowing that our relationship is infinite and special. 
+        Being an auntie, I share life with patience, offering support to those who need it, and enjoying the changing journey of life. 
+        Like a butterfly flying endlessly, I know that life is all about learning, loving, and sharing, with no limits.
+    </div>
+</div>
+
+<footer>
+    © 2026 Shane Lou Necesario | Portfolio
+</footer>
+
+</body>
+</html>
